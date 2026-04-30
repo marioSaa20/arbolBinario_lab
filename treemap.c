@@ -113,8 +113,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     TreeNode*aux = tree->current;
     if(aux->right != NULL){
         while(aux->right != NULL){
-            firstTreeMap(TreeMap*aux);
-            return aux->pair;
+            Pair*nuevo =firstTreeMap(aux->pair);
+            return nuevo;
         }
     }
     return NULL;
