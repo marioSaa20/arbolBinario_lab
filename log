@@ -243,3 +243,9 @@ treemap.c:126:21: error: ‘TreeNode’ has no member named ‘root’
   126 |         if(aux > aux->root){
       |                     ^~
 6e0697e
+Thu Apr 30 08:40:34 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|7
+total_score: 5/60
+a7bff4a
