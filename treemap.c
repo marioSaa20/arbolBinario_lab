@@ -120,7 +120,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             }
         }
     } else {
-        while(aux->parents != NULL){
+        while(aux->parent != NULL){
             aux = aux->parent;
             if(aux > aux->parent){
                 return aux->pair;
