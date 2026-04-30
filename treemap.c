@@ -119,7 +119,15 @@ Pair * nextTreeMap(TreeMap * tree) {
                 return aux->pair;
             }
         }
+    } else {
+        while(aux->parents != NULL){
+            aux = aux->parent;
+            if(aux > aux->parent){
+                return aux->pair;
+            }
+        }
     }
+    
     return NULL;
 }
 
