@@ -73,3 +73,29 @@ treemap.c:111:12: error: returning ‘int *’ from a function with incompatible
   111 |     return aux;
       |            ^~~
 3f186f7
+Thu Apr 30 08:02:28 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:105:5: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+  105 |     treeNode*aux = tree->root;
+      |     ^~~~~~~~
+      |     TreeNode
+treemap.c:105:20: error: initialization of ‘int *’ from incompatible pointer type ‘TreeNode *’ [-Wincompatible-pointer-types]
+  105 |     treeNode*aux = tree->root;
+      |                    ^~~~
+treemap.c:107:15: error: request for member ‘left’ in something not a structure or union
+  107 |         if(aux->left != NULL && aux->right == NULL){
+      |               ^~
+treemap.c:107:36: error: request for member ‘right’ in something not a structure or union
+  107 |         if(aux->left != NULL && aux->right == NULL){
+      |                                    ^~
+treemap.c:108:22: error: request for member ‘left’ in something not a structure or union
+  108 |             aux = aux->left;
+      |                      ^~
+treemap.c:111:12: error: returning ‘int *’ from a function with incompatible return type ‘Pair *’ [-Wincompatible-pointer-types]
+  111 |     return aux;
+      |            ^~~
+5479636
