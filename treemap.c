@@ -104,7 +104,7 @@ void eraseTreeMap(TreeMap * tree, void* key){
 Pair * firstTreeMap(TreeMap * tree) {
     treeNode*aux = map->root;
     while(aux != NULL){
-        if(aux->left != NULL){
+        if(aux->right == NULL){
             aux = aux->left;
         }
     }
