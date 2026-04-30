@@ -160,3 +160,13 @@ treemap.c:104:31: note: expected ‘TreeMap *’ but argument is of type ‘Tree
   104 | Pair * firstTreeMap(TreeMap * tree) {
       |                     ~~~~~~~~~~^~~~
 2ad12e1
+Thu Apr 30 08:28:12 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:116:26: error: expected expression before ‘TreeMap’
+  116 |             firstTreeMap(TreeMap*aux);
+      |                          ^~~~~~~
+3a22650
