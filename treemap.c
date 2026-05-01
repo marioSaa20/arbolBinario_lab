@@ -71,7 +71,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
         } else if(key < aux->pair->key){
             aux = aux->left;
         }
-    }
         
     }
     return NULL;
