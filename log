@@ -387,3 +387,9 @@ treemap.c:71:16: error: ‘TreeNode’ has no member named ‘current’
    71 |             aux->current = aux;
       |                ^~
 b3c19e7
+Fri May  1 11:06:50 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  18|4
+total_score: 30/60
+e9bc1ba
