@@ -343,3 +343,17 @@ Fri May  1 11:01:59 PM UTC 2026:
  tests:  11|5
 total_score: 20/60
 cf5df64
+Fri May  1 11:04:57 PM UTC 2026: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:69:53: error: expected ‘)’ before ‘{’ token
+   69 |         else if(tree->lower_than(aux->pair->key,key){
+      |                ~                                    ^
+      |                                                     )
+treemap.c:75:5: error: expected expression before ‘}’ token
+   75 |     }
+      |     ^
+b7e82f9
