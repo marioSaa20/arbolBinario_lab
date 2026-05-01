@@ -65,13 +65,13 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     while(aux != NULL){
         if(aux->pair->key == key) {
             return aux->pair;
-        } else {
-            if(key > aux->pair->key){
-                aux = aux->right;
-            } else if(key < aux->pair->key){
-                aux = aux->left;
-            }
         }
+        if(key > aux->pair->key){
+            aux = aux->right;
+        } else if(key < aux->pair->key){
+            aux = aux->left;
+        }
+    }
         
     }
     return NULL;
