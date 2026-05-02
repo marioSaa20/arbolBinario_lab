@@ -162,7 +162,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         return;
     } 
     TreeNode*sucesor = minimum(node->right);
-    TreeNode*auxSucesor = node->pair;
+    Void*auxSucesor = node->pair;
     node->pair = sucesor->pair;
     sucesor->pair = auxSucesor;
     removeNode(tree,sucesor);
