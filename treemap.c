@@ -232,21 +232,19 @@ Pair *nextTreeMap(TreeMap *tree)
 
 Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode*aux = tree->root;
-    if(aux->pair->key == key){
-        return aux->pair;
-    }
     TreeNode*ub_node = NULL;
     while(aux != NULL){
         if(tree->lower_than(key, aux->pair->key)){
             ub_node = aux;
             aux = aux->left;
-        } else {
-            ub_node = aux;
+        } else if(tree->lower_than(aux->pair->key,key){
             aux = aux->right;
-        }
-        if(*(int*)key <= *(int*)aux->pair->key && aux < ub_node){
+        } else {
             return aux->pair;
         }
+    }
+    if(ub_node != NULL){
+        return ub_node->pair;
     }
     return NULL;
 }
