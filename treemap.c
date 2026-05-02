@@ -245,7 +245,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             aux = aux->right;
         }
         if(key <= aux && aux < ub_node){
-            return aux;
+            return aux->pair;
         }    
     }
     return NULL;
