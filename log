@@ -420,3 +420,9 @@ treemap.c:123:5: error: expected ‘,’ or ‘;’ before ‘while’
   123 |     while(aux != NULL){
       |     ^~~~~
 8b4e3ea
+Sat May  2 01:24:46 AM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  22|2
+total_score: 40/60
+7ed1e8d
