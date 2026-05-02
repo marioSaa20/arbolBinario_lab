@@ -90,9 +90,12 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         } else if(tree->lower_than(aux->pair->key,key)){
             papa = aux;
             aux = aux->right;
+        } else {
+            return;
         }
     }
     TreeNode*nuevo = (TreeNode*)malloc(sizeof(TreeNode));
+    nuevo->pair = (Pair*)malloc(sizeof(Pair));
     nuevo->pair->key = key;
     nuevo->pair->value = value;
     nuevo->parent = papa;
