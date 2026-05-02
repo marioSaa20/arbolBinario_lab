@@ -614,3 +614,21 @@ treemap.c:238:14: error: unused variable ‘ub_node’ [-Werror=unused-variable]
       |              ^~~~~~~
 cc1: all warnings being treated as errors
 8a60b9d
+Sat May  2 03:15:01 AM UTC 2026: 
+ treemap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:247:16: error: comparison of distinct pointer types lacks a cast [-Werror=compare-distinct-pointer-types]
+  247 |         if(key >= ub_node && ub_node < aux){
+      |                ^~
+treemap.c:248:24: error: ‘TreeNode’ has no member named ‘parents’; did you mean ‘parent’?
+  248 |             aux = aux->parents;
+      |                        ^~~~~~~
+      |                        parent
+treemap.c:250:20: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Wincompatible-pointer-types]
+  250 |             return ub_node;
+      |                    ^~~~~~~
+cc1: all warnings being treated as errors
+7f05dc0
