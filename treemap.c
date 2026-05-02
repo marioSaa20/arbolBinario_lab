@@ -232,7 +232,7 @@ Pair *nextTreeMap(TreeMap *tree)
 
 Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode*aux = tree->root;
-    if(aux->pair->key == key){
+    if(*(int*)aux->pair->key == *(int*)key){
         return aux->pair;
     }
     return NULL;
