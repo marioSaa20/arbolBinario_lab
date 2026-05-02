@@ -157,6 +157,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         }
         free(node->pair);
         free(node);
+        return;
     } else {
         TreeNode*sucesor = minimum(node->right);
         node->pair = sucesor->pair;
