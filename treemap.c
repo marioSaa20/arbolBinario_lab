@@ -244,10 +244,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
             ub_node = aux;
             aux = aux->right;
         }
-        if(key >= ub_node && ub_node < aux){
-            aux = aux->parents;
-            ub_node = aux->left;
-            return ub_node;
+        if(key <= aux && aux < ub_node){
+            return aux;
         }    
     }
     return NULL;
